@@ -26,10 +26,10 @@ try:
     new_garage.add_car(fiesta)
     cars_in_garage = len(new_garage)
     end_comment = " in the garage."
-
+except TypeError:
+    print("Your car wasn't a car!")
+finally: 
     if cars_in_garage == 1:
         print("There is one car" + end_comment)
     else:
         print("There are {str(cars_in_garage)} " + end_comment)
-except TypeError:
-    print("Your car wasn't a car!")
